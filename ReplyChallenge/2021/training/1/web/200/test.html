@@ -17,11 +17,11 @@
         var key = "\x93\x39\x02\x49\x83\x02\x82\xf3\x23\xf8\xd3\x13";
         var flag_enc = "PKhuCrfh3RUw4vie3OMa8z4kcww1i7198ly0Q4rpuyA=";
         for (let step = 0; step < 256; step++) {
-            var tmp_key = key + "\\x" +step.toString(16);
+            var tmp_key = key + String.fromCharCode(step)
             var k = CryptoJS.SHA256(tmp_key);
             var flag = CryptoJS.AES.decrypt(flag_enc, CryptoJS.enc.Hex.parse(k.toString().substring(0,32)), { iv: CryptoJS.enc.Hex.parse(k.toString().substring(32,64)) });
 
-            console.log(flag+"\n");
+            console.log(hex_to_ascii(flag)+"\n");
             
         }
     }
