@@ -1,0 +1,57 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/sha256.js"></script>
+		
+<script>
+
+    function hex_to_ascii(str1)
+    {
+        var hex  = str1.toString();
+        var str = '';
+        for (var n = 0; n < hex.length; n += 2) {
+            str += String.fromCharCode(parseInt(hex.substr(n, 2), 16));
+        }
+        return str;
+    }
+
+	function auth() {
+        var key = "\x93\x39\x02\x49\x83\x02\x82\xf3\x23\xf8\xd3\x13";
+        var flag_enc = "PKhuCrfh3RUw4vie3OMa8z4kcww1i7198ly0Q4rpuyA=";
+        for (let step = 0; step < 256; step++) {
+            var tmp_key = key + "\\x" +step.toString(16);
+            var k = CryptoJS.SHA256(tmp_key);
+            var flag = CryptoJS.AES.decrypt(flag_enc, CryptoJS.enc.Hex.parse(k.toString().substring(0,32)), { iv: CryptoJS.enc.Hex.parse(k.toString().substring(32,64)) });
+
+            console.log(flag+"\n");
+            
+        }
+    }
+	// 	var k = CryptoJS.SHA256("\x93\x39\x02\x49\x83\x02\x82\xf3\x23\xf8\xd3\x13\#xXX"); // ops...missing last byte!
+	// 	var u = document.getElementById("user").value;
+	// 	var p = document.getElementById("pass").value;
+	// 	var t = false;
+
+	// 	if(u == "a") {
+	// 		var enc = CryptoJS.AES.encrypt(p, CryptoJS.enc.Hex.parse(k.toString().substring(0,32)), { iv: CryptoJS.enc.Hex.parse(k.toString().substring(32,64)) });
+
+	// 		if(enc == "PKhuCrfh3RUw4vie3OMa8z4kcww1i7198ly0Q4rpuyA=") {
+	// 			t = true;
+	// 		}
+	// 	} 
+
+	// 	if(t) {
+	// 		document.write("Congratulations, you won! You can now submit the password as the FLAG of the challenge :-)");
+	// 	} else {
+	// 		document.write("Wrong credentials! :(");
+	// 	}
+	// }
+</script>
+
+<form action="">
+	<label>Username</label>
+	<input type="text" id="user" name="username" />
+	<br>
+	<label>Password</label>
+	<input type="password" id="pass" name="password" />
+	<br>
+	<input type="submit" value="Login" onclick="auth()" />
+</form>

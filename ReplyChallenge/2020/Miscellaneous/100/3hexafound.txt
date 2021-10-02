@@ -1,0 +1,6 @@
+Dans wiresharck : Aller dans Analyser (barre d'outils en haut) -> Suivre -> flux TCP
+-> On obtient direct les donnees de tous les packets : {FLG:i7430prrn37343<}
+
+Le flag n'est pas bon, on relit les packets a la main, on remarque que y'a 33 et 33 qui se suivent contrairement a precedement ce qui nous donne
+{FLG:i7430prrn33743<} -> FLAG REUSSI !!!!!!!!!!!
+                                                      

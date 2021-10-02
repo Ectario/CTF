@@ -1,0 +1,3 @@
+The SHA-256 hash of the concatenated unscrambled words will be *the content* of the flag and it needs to be converted to lowercase.
+
+To get the complete flag, insert the lowercase string obtained between “{FLG:” and “}” without any blank space after the “:” and before the “}”.

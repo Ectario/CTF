@@ -1,0 +1,8 @@
+In order to open the mailbox you have to guess the 4 digits code (each position
+could contain a number from 0 to 9), given the following evidences:
+
+3871    1 correct digit and in right position
+4170    1 correct digit and in wrong position
+5028    2 correct digits and in right position
+7526    1 correct digit and in right position
+8350    2 correct digits and in wrong position
