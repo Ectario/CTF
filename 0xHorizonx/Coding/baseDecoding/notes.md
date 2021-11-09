@@ -1,6 +1,6 @@
 # INFO
 
-Provided: telnet 0xhorizon.eu 9999
+Provided: `telnet 0xhorizon.eu 9999`
 
 We get:
 
@@ -13,7 +13,7 @@ Saving the blob into `input`. Then, I try: `cat input| base64 -d` and after that
 The password is this random string: FqQCKceSgl 
 
 
-The logic was found !
+Logic is found!
 
 # Automate
 
