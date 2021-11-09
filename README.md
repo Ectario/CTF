@@ -1,3 +1,3 @@
 # CTF
 
-Trace of CTFs made.
+Trace of CTFs made. (with some writeups)
