@@ -8,7 +8,7 @@ So I ungif the gif -> getting each images. Online tools are our friends.
 After that, let's scan it...
 WOW got it ! Each one is a letter.
 
-Let's code an automatisation.
+Let's code an automation.
 
 # Automate
 
