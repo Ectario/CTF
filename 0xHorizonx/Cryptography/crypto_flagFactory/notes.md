@@ -3,7 +3,9 @@
 We have :
 
 N = 5831008097717569085735427516825344742005710636476016496872172952472223
+
 E = 65537
+
 C = 1684110829310784101135485146139386330031168756507533683193091793159298
 
 Then, instinctively it appears like RSA problem. C as the encrypted message, E as the public key, N the modulus in the RSA formula.
