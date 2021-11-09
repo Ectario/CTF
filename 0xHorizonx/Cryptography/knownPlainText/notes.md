@@ -8,7 +8,7 @@ Moreover, by observing the encrypt.py script, we notice that this one uses an en
 
 Explanation :
 
-+ <=> XOR operator
+_+ <=> XOR operator_
 
 plaintext + key = encrypted text
 
