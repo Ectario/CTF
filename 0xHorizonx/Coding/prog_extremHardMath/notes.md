@@ -1,6 +1,6 @@
 # INFO
 
-telnet 0xhorizon.eu 7777
+Provided: `nc 0xhorizon.eu 7777`
 
 Please return the square root of this calculus round two decimals... 2 seconds max^^
 
