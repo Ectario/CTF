@@ -23,8 +23,9 @@ Let's check if they're prime numbers. (with dCode site) --> Yes it is, nice.
 
 Next, we need to calculate the natural number D, which is the inverse of E modulo φ(n), (and strictly less than φ(n)), called _the decryption exponent_; D can be calculated efficiently by the extended Euclidean algorithm: 
 
-=> E * D = 1 [φ(n)], where φ(n)=(p-1)*(q-1)
-=> D * E + k * φ(n) = 1, where k\in\Z
+- `E * D = 1 [φ(n)], where φ(n)=(p-1)*(q-1)`  (definition above)
+
+- `=> D * E + k * φ(n) = 1, where k\in\Z`
 
 Let's make euclidean_algo(E, φ(n)) to get the D factor. (with `script.py`)
 
