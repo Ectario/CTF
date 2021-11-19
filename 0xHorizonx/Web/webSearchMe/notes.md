@@ -4,7 +4,7 @@ The challenge brings us back to a site.
 Let's try a little ...
 Ok, when we do a search, the search is rewritten in the html code. So let's try an xss payload just to try it out.
 
-OK! It is therefore an xss flaw.
+OK! It is therefore an xss flaw. (see PoC below)
 
 Let's exploit.
 
