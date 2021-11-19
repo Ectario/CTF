@@ -1,5 +1,3 @@
--> check les mots de pase et si le hash commence par 0eXX c'est good
-
 # INFO
 
 We arrive on a site. This site offers us to see if there is a backdoor and gives us the following code:
