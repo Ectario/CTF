@@ -1,6 +1,6 @@
 # CTF
 
-Trace of CTFs made. (with some writeups)
+Summary of CTFs completed. (Only some of them have writeups)
 
 # Writeups
 
