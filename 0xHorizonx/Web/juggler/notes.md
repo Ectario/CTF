@@ -17,13 +17,13 @@ Quickly we understand that we want the condition "if (md5 ($ _ POST [" password 
 
 We see that the condition is likely to be broken by a `type juggling` flaw
 
-Let's try it. (in First Idea)
+Let's try it. (see First Idea)
 
 It wasn't the right way.
 
 After having had advice and some research on the internet. The new idea would be to use the specifity looking at that the hash is '0e' followed only by numbers and only by numbers. 
 
-Let's try it. (in Second Idea)
+Let's try it. (see Second Idea)
 
 That was the good one!
 
