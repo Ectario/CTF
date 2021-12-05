@@ -21,8 +21,8 @@ So we need to create a script which is a linear-system solver for 6 equations wi
 - do the calculus
 - send the result after rounding
 
-Let's code! (`script.py`)
+Let's code! (`script.py`).
 
-# Gotcha!
+# Gotcha!
 
 horiz0nx{S0_Str0ng_M4ths}
